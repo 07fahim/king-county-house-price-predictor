@@ -1,6 +1,6 @@
 ## Deployment
 
-For detailed deployment instructions, see the [Deployment Guide](deployment-guide.md).
+For detailed deployment instructions, see the [https://github.com/07fahim/king-county-house-price-predictor/blob/main/DEPLOYMENT_GUIDE.md]).
 
 ### Quick Deployment Options
 
