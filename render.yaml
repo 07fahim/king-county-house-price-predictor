@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: king-county-house-predictor
+    env: docker
+    repo: https://github.com/yourusername/king_county_house_price_predictor
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /
