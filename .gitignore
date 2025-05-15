@@ -31,9 +31,6 @@ ENV/
 *.swp
 *.swo
 
-# Docker
-Dockerfile
-.dockerignore
 
 # Test cache
 .pytest_cache/
