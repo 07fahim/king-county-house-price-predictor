@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="house" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Sky -->
+        <rect fill="#E1F5FE" x="0" y="0" width="800" height="600"></rect>
+        
+        <!-- Ground -->
+        <rect fill="#81C784" x="0" y="450" width="800" height="150"></rect>
+        
+        <!-- House base -->
+        <rect fill="#FFECB3" x="200" y="250" width="400" height="250"></rect>
+        
+        <!-- Roof -->
+        <polygon fill="#795548" points="200,250 400,100 600,250"></polygon>
+        
+        <!-- Door -->
+        <rect fill="#5D4037" x="350" y="400" width="100" height="100"></rect>
+        <circle fill="#FFC107" cx="430" cy="450" r="5"></circle>
+        
+        <!-- Windows -->
+        <rect fill="#BBDEFB" x="250" y="300" width="80" height="80"></rect>
+        <rect fill="#BBDEFB" x="470" y="300" width="80" height="80"></rect>
+        
+        <!-- Window frames -->
+        <rect stroke="#1565C0" stroke-width="5" x="250" y="300" width="80" height="80"></rect>
+        <rect stroke="#1565C0" stroke-width="5" x="470" y="300" width="80" height="80"></rect>
+        <line x1="290" y1="300" x2="290" y2="380" stroke="#1565C0" stroke-width="5"></line>
+        <line x1="250" y1="340" x2="330" y2="340" stroke="#1565C0" stroke-width="5"></line>
+        <line x1="510" y1="300" x2="510" y2="380" stroke="#1565C0" stroke-width="5"></line>
+        <line x1="470" y1="340" x2="550" y2="340" stroke="#1565C0" stroke-width="5"></line>
+        
+        <!-- Chimney -->
+        <rect fill="#795548" x="500" y="125" width="30" height="75"></rect>
+        
+        <!-- Path -->
+        <rect fill="#BDBDBD" x="375" y="500" width="50" height="100"></rect>
+        
+        <!-- Sun -->
+        <circle fill="#FFD54F" cx="100" cy="100" r="50"></circle>
+        
+        <!-- Smoke -->
+        <path d="M515,120 C530,100 525,70 505,60 C525,50 520,20 505,10" stroke="#BDBDBD" stroke-width="5" stroke-linecap="round"></path>
+    </g>
+</svg>
