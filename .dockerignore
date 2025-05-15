@@ -12,6 +12,7 @@ __pycache__/
 *.py[cod]
 *.pyo
 .pytest_cache/
+*.pyc
 
 # IDEs and editors
 .vscode/
@@ -23,6 +24,14 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs and test coverage
 *.log
+*.coverage
+htmlcov/
+coverage.xml
 
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
