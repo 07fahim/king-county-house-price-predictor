@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>House Price Prediction Result</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="result-container">
+            <div class="result-card">
+                <h2>Estimated House Price</h2>
+                <div class="prediction-value">{{ prediction }}</div>
+                
+                <div class="feature-summary">
+                    <h3>Property Details</h3>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <span class="feature-label">Living Area:</span>
+                            <span class="feature-value">{{ features.sqft_living }} sq ft</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">Bedrooms:</span>
+                            <span class="feature-value">{{ features.bedrooms }}</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">Bathrooms:</span>
+                            <span class="feature-value">{{ features.bathrooms }}</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">Grade:</span>
+                            <span class="feature-value">{{ features.grade }}</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">Year Built:</span>
+                            <span class="feature-value">{{ features.yr_built }}</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">Basement:</span>
+                            <span class="feature-value">{{ features.sqft_basement }} sq ft</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">Waterfront:</span>
+                            <span class="feature-value">{% if features.waterfront == 1 %}Yes{% else %}No{% endif %}</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-label">View Quality:</span>
+                            <span class="feature-value">{{ features.view }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="/prediction/form" class="btn">New Prediction</a>
+                <a href="/" class="btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 King County House Price Predictor</p>
+        </div>
+    </footer>
+</body>
+</html>

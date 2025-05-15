@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King County House Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>King County House Price Predictor</h1>
+            <p>Using machine learning to predict house prices in King County, Washington</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Predict Your House Value</h2>
+                <p>Our machine learning model analyzes property characteristics to estimate market value based on King County housing data.</p>
+                <a href="/prediction/form" class="btn">Start Prediction</a>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', path='/images/house.svg') }}" alt="House illustration">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>About the Model</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Data Source</h3>
+                    <p>Based on King County housing data from May 2014 to May 2015, covering 21,613 house sales including Seattle area.</p>
+                </div>
+                <div class="card">
+                    <h3>Machine Learning</h3>
+                    <p>Powered by a  XGBoost regression model that analyzes multiple property features to predict price.</p>
+                </div>
+                <div class="card">
+                    <h3>Key Features</h3>
+                    <p>Uses factors like square footage, grade, location, bathrooms, and other features to make accurate predictions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="api-info">
+            <h2>API Access</h2>
+            <p>This application also provides a REST API for programmatic access:</p>
+            <div class="api-endpoints">
+                <div class="endpoint">
+                    <h3>POST /prediction/predict</h3>
+                    <p>Send property details and receive price predictions via JSON.</p>
+                    <a href="/docs" class="btn btn-secondary">API Documentation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 King County House Price Predictor</p>
+        </div>
+    </footer>
+</body>
+</html>
