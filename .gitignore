@@ -31,15 +31,14 @@ ENV/
 *.swp
 *.swo
 
-
 # Test cache
 .pytest_cache/
 
 # Project specific
-data/model.pkl
-data/scaler.pkl
-data/feature_columns.txt
-data/use_scaler.txt
+# data/model.pkl  # Commented out to include model
+# data/scaler.pkl  # Commented out to include scaler
+# data/feature_columns.txt  # Commented out to include
+# data/use_scaler.txt  # Commented out to include
 *.log
 
 # OS specific

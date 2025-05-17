@@ -1,0 +1,1 @@
+sqft_living,grade,bathrooms,bedrooms,waterfront,view,sqft_basement,yr_built,lat,long
