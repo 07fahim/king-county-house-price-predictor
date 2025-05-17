@@ -17,7 +17,7 @@ import os
 os.makedirs('data', exist_ok=True)
 
 # Load the dataset
-df = pd.read_csv(r"D:\KING_PRICE_PREDICTION\king_county_house_price_predictor\kc_house_data.csv")  # Update path if needed
+df = pd.read_csv(r"kc_house_data.csv")  # Update path if needed
 
 # Feature selection
 X = df[['sqft_living', 'grade', 'bathrooms', 'bedrooms', 'waterfront', 'view', 'sqft_basement', 'yr_built', 'lat', 'long']]
