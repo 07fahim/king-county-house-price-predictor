@@ -78,7 +78,7 @@ A machine learning web application that predicts house prices in King County, Wa
 
 ### Web Interface
 
-1. Navigate to http://127.0.0.1:8000
+1. Navigate to the website by: [http://127.0.0.1:8000](https://lnkd.in/gEKHm2eN)
 2. Click on "Start Prediction"
 3. Fill in the property details
 4. Submit the form to get the predicted house price
