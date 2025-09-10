@@ -1,7 +1,7 @@
 # Background 
 King County House Price Predictor is a machine learning–powered web application built to estimate house prices in King County, Washington. It utilizes property features like living area size, number of bedrooms and bathrooms, grade, waterfront view, year built, and geographical coordinates to generate predictions with the help of scikit-learn and XGBoost models. The app provides a user-friendly interface powered by FastAPI on the backend and  HTML/CSS for the frontend. It also offers a RESTful JSON API for programmatic access.
 
-![Banner](assets/image2.png)
+![Banner](assets/image1.png)
 
 
 ## Deployment
